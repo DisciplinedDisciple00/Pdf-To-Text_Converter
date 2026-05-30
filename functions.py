@@ -10,14 +10,17 @@ def len_finder(file):
     return max_pages
 
 #Main text extraction
-def converter(file, target):
+def converter(file, targets):
     reader = PdfReader(file)
     file_pages = reader.pages
 
     cleaned_pages_text = []
 
+    start = targets[0]
+    end = targets[1]
+
     #Text Pre-processing
-    for i in range(target):
+    for i in range(start-1, end):
         page_text = file_pages[i].extract_text()
         cleaned_page_text = page_text.split("\n\n")
         cleaned_pages_text.append(cleaned_page_text)

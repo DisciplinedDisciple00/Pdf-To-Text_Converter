@@ -10,12 +10,14 @@ if user_file:
     limit = len_finder(user_file)
 
     #Setting slider max value
-    target = st.slider("Till which page would you like to convert - ", 0, limit)
+    targets = st.slider("Till which page would you like to convert - ", 0, limit, (0, 0))
+    start = targets[0]
+    end = targets[1]
 
-    if target:
-        result = converter(user_file, target)
+    if targets:
+        result = converter(user_file, targets)
 
         #Expandable displayer
         for i in range(len(result)):
-            with st.expander(f"Page {i+1} :"):
-                st.info("\n\n".join(result[i]))
+            with st.expander(f"Page {start+i} :"):
+                st.text("\n\n".join(result[i]))
