@@ -10,7 +10,7 @@ if user_file:
     limit = len_finder(user_file)
 
     #Setting up slider values
-    targets = st.slider("Till which page would you like to convert - ", 0, limit, (0, 0))
+    targets = st.slider("Till which page would you like to convert - ", 1, limit, (1, 1))
     start = targets[0]
     end = targets[1]
 
