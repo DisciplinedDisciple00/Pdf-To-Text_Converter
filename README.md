@@ -1,4 +1,4 @@
-### PDF-To-Text Converter
+# PDF-To-Text Converter
 
 ## Overview
 
@@ -20,7 +20,7 @@ The project began as a simple PDF text extraction tool and has gradually evolved
 
 ## Features
 
-# V1 - Basic PDF Text Extraction - 
+### V1 - Basic PDF Text Extraction - 
 
 * Upload PDF documents through a web interface.
 * Extract text using PyPDF.
@@ -28,7 +28,7 @@ The project began as a simple PDF text extraction tool and has gradually evolved
 * Support for multi-page PDFs.
 
 
-# V2 - User Interface Improvements - 
+### V2 - User Interface Improvements - 
 
 * Dynamic page count detection.
 * Slider-based page selection.
@@ -38,7 +38,7 @@ The project began as a simple PDF text extraction tool and has gradually evolved
 * Paragraph preservation using newline-based preprocessing.
 * Cleaner and more organized output display.
 
-# V3 - OCR Integration - 
+### V3 - OCR Integration - 
 
 * OCR fallback for image-based PDF pages.
 * Automatic detection of pages where native text extraction fails.
